@@ -1,3 +1,9 @@
+:root {
+    --footer-height: 100px;
+    --left-nav-width: 250px;
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -7,10 +13,7 @@
 html {
     font-size: 100%;
     font-family: 'Montserrat', sans-serif;
-}
-
-body {
-    background-color: #131923;
+    overflow: hidden;
 }
 
 .container {
@@ -25,8 +28,13 @@ a {
 ul {
     list-style: none;
 }
+/* common  */
 .width-80 {
     width: 80%;
+}
+
+.width-100 {
+    width: 100%;
 }
 
 .center {
@@ -34,16 +42,6 @@ ul {
 }
 .mg-auto {
     margin: 0 auto;
-}
-.mgb-1 {
-    margin-bottom: 1em;
-}
-.mgb-2 {
-    margin-bottom: 2em;
-}
-
-.inline-block {
-    display: inline-block;
 }
 
 .white {
@@ -68,21 +66,25 @@ ul {
     display: flex;
 }
 
-.container {
-    height: 100%;
-    width: 100%;
+.fixed {
+    position: fixed;
 }
-/* header  */
-header {
-    width: 20%;
+
+.container {
+    width: 100%;
+    height: 100vh;
+}
+/* main */
+main {
+    height: calc(100% - var(--footer-height));
+    background-color: #131923;
+}
+main .nav-left {
+    width: var(--left-nav-width);
     height: 100%;
     background-color: black;
-}
-header nav {
     display: flex;
     flex-direction: column;
-    color: white;
-
 }
 .logo {
     width: 70%;
@@ -158,8 +160,8 @@ header nav {
 }
 
 .container-playlist .playlist-name {
-    min-height: 400px;
-    overflow: scroll;
+    height: 300px;
+    overflow: auto;
 }
 
 .container-playlist .playlist-name li {
@@ -201,3 +203,52 @@ header nav {
 .profile div a {
     font-weight: bold;
 }
+
+/* main content  */
+main .main-content {
+    width: calc(100% - var(--left-nav-width));
+}
+/* upgrade button  */
+
+.main-content header {
+   top: 0;
+   right: 0;
+   z-index: 9999;
+   background-color: rgba(0, 0, 0, 0.3);
+   width: calc(100% - var(--left-nav-width));
+   height: var(--footer-height);
+   justify-content: flex-end;
+   align-items: center;  
+}
+
+.main-content header .cta-btn {
+    color: white;
+    font-size: 0.8em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 70px;
+    margin: 0 1em;
+    padding: 1em 2em;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.main-content header .cta-btn:hover {
+    color: black;
+    background-color: white;
+}
+
+
+
+
+
+
+
+/* footer  */
+footer {
+    height: var(--footer-height);
+    background-color: #272828;
+}
+
