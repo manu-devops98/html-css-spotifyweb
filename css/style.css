@@ -8,3 +8,196 @@ html {
     font-size: 100%;
     font-family: 'Montserrat', sans-serif;
 }
+
+body {
+    background-color: #131923;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+.width-80 {
+    width: 80%;
+}
+
+.center {
+    text-align: center;
+}
+.mg-auto {
+    margin: 0 auto;
+}
+.mgb-1 {
+    margin-bottom: 1em;
+}
+.mgb-2 {
+    margin-bottom: 2em;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.white {
+    color: white;
+}
+
+.text-grey {
+    color: #727373;
+}
+
+.float {
+    float: left;
+}
+
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.flex {
+    display: flex;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+}
+/* header  */
+header {
+    width: 20%;
+    height: 100%;
+    background-color: black;
+}
+header nav {
+    display: flex;
+    flex-direction: column;
+    color: white;
+
+}
+.logo {
+    width: 70%;
+    padding: 1em 1.5em;
+}
+
+/* nav-menu  */
+.container-menu {
+    margin-bottom: 1em;
+}
+
+.container-menu ul {
+    list-style: none;
+}
+
+.container-menu span {
+    width: 10%;
+    display: inline-block;
+    margin: 0 0.5em 0 1.5em;
+}
+
+.container-menu span img {
+    width: 100%;
+    filter: invert(60%);
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.container-menu li {
+    margin-bottom: 0.5em;
+}
+
+.container-menu li a {
+    color: #727373;
+}
+
+.container-menu #home {
+    display: block;
+    border-left: 3px solid greenyellow;
+}
+
+.container-menu #home span {
+    margin-left: 1.3em;
+}
+
+.container-menu #home img {
+    filter: none;
+}
+
+.container-menu #home a {
+    color: white;
+}
+
+/* playlist  */
+.container-playlist h3 {
+    text-transform: uppercase;
+    margin-bottom: 0.5em;
+} 
+
+.container-playlist span i {
+    font-size: 3.5em;
+    vertical-align: middle;
+    margin-right: 0.3em;
+    color: #727373;
+    cursor: pointer;
+}
+.container-playlist div {
+    margin-bottom: 1em;
+}
+.container-playlist div a {
+    color: #727373;
+    font-weight: bold;
+}
+
+.container-playlist .playlist-name {
+    min-height: 400px;
+    overflow: scroll;
+}
+
+.container-playlist .playlist-name li {
+    margin-bottom: 1em;
+}
+
+/* donwload  */
+.download {
+    border-bottom: 2px solid #727373;
+    padding: 0.5em;
+}
+.download span {
+    width: 10%;
+    margin-right: 0.5em;
+}
+
+.download span img {
+    width: 10%;
+    vertical-align: middle;
+    filter: invert(60%);
+}
+
+/* profile  */
+.profile {
+    margin: 1em auto;
+}
+.profile span {
+    width: 10%;
+    margin-right: 0.8em;
+}
+
+.profile span img  {
+    width: 10%;
+    vertical-align: middle;
+    background-color: #727373;
+    border-radius: 50%;
+}
+
+.profile div a {
+    font-weight: bold;
+}
