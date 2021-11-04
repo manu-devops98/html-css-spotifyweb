@@ -333,11 +333,13 @@ main .main-content {
 }
 
 .container-song li {
-    width: 100%;
+    text-align: center;
+    width: 15%;
+    padding: 0 0.5em;
 }
 
 .album {
-    width: 180px;
+    width: 100%;
     margin-bottom: 1em;
     margin-top: 2em;
 }
@@ -354,35 +356,19 @@ main .main-content {
     font-weight: bold;
 }
 
+/* JOHN DOE SECTION  */
+.john-doe {
+    margin-bottom: 2em;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.main-paragraph {
+    color: var(--font-color);
+    margin-top: 1em;
+}
+/* POPULAR  */
+.popular img {
+    border-radius: 50%;
+}
 
 /* FOOTER  */
 footer {
@@ -504,8 +490,8 @@ footer .time-bar:after {
 }
 
 .circle{
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     border-radius: 50px;
     position: absolute;
     left: 18%;
@@ -566,8 +552,8 @@ footer .col-right {
 }
 
 .volume .vol-circle {
-    width: 20px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
     border-radius: 50px;
     position: absolute;
     left: 18%;
