@@ -14,68 +14,83 @@
 </head>
 <body>
  <div class="container">
-   <main class="flex">
-       <nav class="nav-left">
-           <div class="logo">
-               <img src="img/logo.svg" alt="">
-           </div>
+   <main class="clearfix">
+       <nav class="nav-left float">
+           <!-- nav-left-top -->
+           <div class="nav-left-top">
 
-           <div class="container-menu mg-auto">
-               <ul>
-                   <li id="home">
-                       <span><img src="img/home.svg" alt=""></span><a href="">Home</a>
-                    </li>
-                    
-                   <li>
-                       <span><img src="img/search.svg" alt=""></span><a href="">Cerca</a>
-                    </li>
-
-                   <li>
-                       <span><img src="img/libreria.svg" alt=""></span><a href="">La tua libreria</a>
-                    </li>
-               </ul>
-
-           </div>
-           <div class="container-playlist width-80 mg-auto">
-               <h3 class="white">Playlist</h3>
-                <div><span><i class="fas fa-plus-square"></i></span><a href="">Crea Playlist</a></div>
-
-                <div class="playlist-name">
-                    <ul>
-                        <li><a href="">Nome Playlist</a></li>
-                        <li><a href="">Nome Playlist</a></li>
-                        <li><a href="">Nome Playlist</a></li>
-                        <li><a href="">Nome Playlist</a></li>
-                        <li><a href="">Nome Playlist</a></li>
-                        <li><a href="">Nome Playlist</a></li>
-                        <li><a href="">Nome Playlist</a></li>
-                    </ul>
-                </div>
+            <div class="logo">
+                <img src="img/logo.svg" alt="">
             </div>
-           <div class="container-download width-80 mg-auto">
-                 <div class="download">
-                     <span><img src="img/download.svg" alt=""></span><a class="text-grey" href="">Installa app</a>
+ 
+            <div class="container-menu mg-auto">
+                <ul>
+                    <li id="home">
+                        <span><img src="img/home.svg" alt=""></span><a href="">Home</a>
+                     </li>
+                     
+                    <li>
+                        <span><img src="img/search.svg" alt=""></span><a href="">Cerca</a>
+                     </li>
+ 
+                    <li>
+                        <span><img src="img/libreria.svg" alt=""></span><a href="">La tua libreria</a>
+                     </li>
+                </ul>
+ 
+            </div>
+            <div class="container-playlist width-80 mg-auto">
+                <h3 class="white">Playlist</h3>
+                 <div><span><i class="fas fa-plus-square"></i></span><a href="">Crea Playlist</a></div>
+ 
+                 <div class="playlist-name">
+                     <ul>
+                         <li><a href="">Nome Playlist</a></li>
+                         <li><a href="">Nome Playlist</a></li>
+                         <li><a href="">Nome Playlist</a></li>
+                         <li><a href="">Nome Playlist</a></li>
+                         <li><a href="">Nome Playlist</a></li>
+                         <li><a href="">Nome Playlist</a></li>
+                         <li><a href="">Nome Playlist</a></li>
+                     </ul>
                  </div>
+             </div>  
            </div>
+          <!-- nav-left-bottom -->
+           <div class="nav-left-bottom">
+            <div class="container-download width-80 mg-auto">
+                <div class="download">
+                    <span><img src="img/download.svg" alt=""></span><a class="text-grey" href="">Installa app</a>
+                </div>
+          </div>
 
-           <!-- profile  -->
-           <section class="profile width-80 mg-auto">
-              <div><span><img src="img/profile.svg" alt=""></span><a class="white" href="">John Doe</a></div>
-           </section>    
+          <!-- profile  -->
+          <section class="profile width-80">
+             <div><span><img src="img/profile.svg" alt=""></span><a class="white" href="">John Doe</a></div>
+          </section>  
+           </div>
+             
        </nav>
-    <!-- main content  -->
 
-       <div class="main-content">
+       <!-- main content  -->
+       <div class="main-content float">
            <header class="fixed flex">
                <button class="cta-btn">EFFETTUA L'UPGRADE</button>
            </header>
+           
        </div>
+
+       
    </main>  
    
-    <footer>
-        <div class="col-left">lorem</div>
-        <div class="col-middle">lorem</div>
-        <div class="col-right">lorem</div>
+    <footer class="flex">
+        
+          <div class="col-left flex">
+             lorem
+          </div>
+          <div class="col-middle flex">lorem</div>
+          <div class="col-right flex">lorem</div>
+        
     </footer>   
  </div>
 </body>
