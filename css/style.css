@@ -12,7 +12,6 @@
     --nav-bottom-height: 80px;
 }
 
-
 * {
     margin: 0;
     padding: 0;
@@ -32,6 +31,7 @@ a {
 ul {
     list-style: none;
 }
+
 /* COMMON  */
 .width-80 {
     width: 80%;
@@ -84,7 +84,9 @@ main {
     width: 100%;
     height: calc(100% - var(--footer-height));
     background-color: #131923;
+    overflow: auto;
 }
+
 main .nav-left {
     width: var(--left-nav-md-width);
     height: 100%;
@@ -151,6 +153,11 @@ main .nav-left {
 }
 
 /* PLAYLIST  */
+.container-playlist {
+    height: 70%;
+    overflow: hidden;
+}
+
 .container-playlist h3 {
     text-transform: uppercase;
     margin-bottom: 0.5em;
@@ -172,7 +179,8 @@ main .nav-left {
 }
 
 .container-playlist .playlist-name {
-    height: 20vh;
+    height: 60%;
+    padding: 1em 0 3em 0;
     overflow: auto;
 }
 
@@ -185,6 +193,7 @@ main .nav-left {
     border-bottom: 2px solid #727373;
     padding: 0.5em;
 }
+
 .download span {
     width: 10%;
     margin-right: 0.5em;
@@ -225,8 +234,8 @@ main .main-content {
     padding-bottom: 2em;
     overflow: auto;
 }
-/* UPGRADE BUTTON   */
 
+/* UPGRADE BUTTON   */
 .main-content header {
    top: 0;
    right: 0;
@@ -272,6 +281,182 @@ footer {
     align-items: center;
     flex-direction: row;
 }
+/* FOOTER COL-LEFT  */
+footer .col-left {
+    justify-content: flex-start;
+    align-items: center;
+    width: 20%;
+}
 
+footer .col-left img {
+    width: 40px;
+    margin: 0 10px;
+    vertical-align: middle;
+}
 
+footer .track {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 2em;
+}
 
+footer .col-left a {
+    color: var(--a-hover-color);
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+footer .col-left span {
+    color:  var(--font-color);
+    font-size: 0.6em;
+}
+
+footer .icon i {
+    font-size: 1.7em;
+    margin-right: 0.8em;
+}
+
+/* FOOTER COL-MIDDLE  */
+
+footer .col-middle {
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+}
+
+footer .player {
+    margin-bottom: 1em;
+}
+footer .player ul{
+    justify-content: center;
+    align-items: center;
+}
+
+footer .player li {
+    padding: 0 1em;
+}
+
+.player li:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+footer .player li i {
+    color: white;
+}
+
+.fa-play-circle {
+    font-size: 2em;
+}
+
+footer .timer {
+    width: 100%;
+   justify-content: center;
+   align-items: center;
+}
+
+footer .timer span {
+    font-size: 0.8em;
+    font-weight: bold;
+    color: white;
+}
+
+footer .time-bar {
+    background: #727373;
+    border-radius: 13px;
+    height: 0.3em;
+    width: 60%;
+    margin: 0 2em;
+    position: relative;
+}
+footer .time-bar:after {
+    content: '';
+    display: block;
+    background: white ;
+    width: 20%;
+    height: 100%;
+    border-radius: 9px;  
+}
+
+.circle{
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    position: absolute;
+    left: 18%;
+    top: 0;
+    transform: translate( 0, -40%);
+    background-color: greenyellow;
+    display: none;
+}
+.time-bar:hover .circle{
+    display: block;
+    cursor: pointer;
+}
+.time-bar:hover::after{
+    content: '';
+    display: block;
+    background: greenyellow ;
+    width: 20%;
+    height: 100%;
+    border-radius: 9px;
+    cursor: pointer;
+}
+/* COL-RIGHT  */
+footer .col-right {
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-right i {
+    color: white;
+    font-size: 0.9em;
+    margin-right: 1em;
+}
+
+.col-right i:hover {
+    color: #727373;
+    cursor: pointer;
+}
+
+.col-right .volume {
+    background: #727373;
+    border-radius: 13px;
+    height: 0.3em;
+    width: 50%;
+    position: relative;
+
+}
+
+.col-right .volume::after {
+    content: '';
+    display: block;
+    background: white;
+    border-radius: 13px;
+    height: 0.3em;
+    width: 20%;
+    position: relative;
+}
+
+.volume .vol-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    position: absolute;
+    left: 18%;
+    top: 0;
+    transform: translate( 0, -40%);
+    background-color: greenyellow;
+    display: none;
+}
+
+.volume:hover .vol-circle {
+    display: block;
+    cursor: pointer;
+}
+
+.volume:hover::after {
+    background: greenyellow;
+}
