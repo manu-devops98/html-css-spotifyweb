@@ -315,7 +315,7 @@ main .main-content {
 
 /* PLAYED SECTION  */
 .container-song {
-    margin: 3em 1em;
+    margin: 3em 0;
     width: 100%;
 }
 .played {
@@ -326,6 +326,7 @@ main .main-content {
 .main-title {
    font-size: 1.5em;
    color: var(--a-hover-color);
+   margin-left: 0.8em;
 }
 
 .container-song ul {
@@ -351,6 +352,7 @@ main .main-content {
     width: 100%;
     margin-bottom: 1em;
     margin-top: 2em;
+    margin-left: 0.5em;
 }
 
 .play-hover {
@@ -400,6 +402,7 @@ main .main-content {
 .main-paragraph {
     color: var(--font-color);
     margin-top: 1em;
+    margin-left: 1em;
 }
 /* POPULAR  */
 .popular img {
@@ -425,6 +428,10 @@ footer {
     width: 40px;
     margin: 0 10px;
     vertical-align: middle;
+}
+
+.col-left img:hover {
+    transform: scale(1.1);
 }
 
 .track {
