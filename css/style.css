@@ -6,7 +6,7 @@
   --a-active-underline-color: greenyellow;
    /* size */
     --footer-height: 90px;
-    --left-nav-md-width: 230px;
+    --left-nav-md-width: 270px;
     --left-nav-xs-width: 50px;
     --left-nav-min-height: 480px;
     --nav-bottom-height: 80px;
@@ -609,6 +609,85 @@ footer {
 
 
 /* MEDIA QUERY  */
+@media screen and (max-width: 1100px) {
+    main .nav-left {
+        width: var(--left-nav-md-width);
+    }
+    
+    .logo {
+        width: 90%;
+    }
+
+    .container-menu {
+        font-size: 1em;
+        font-weight: bold;
+        padding-bottom: 0.8em;
+    }
+    
+    .container-menu span {
+        width: 15%;
+    }
+    .container-menu span img {
+        filter: invert(10%);
+    }
+
+    .container-playlist {
+        font-size: 1.1em;
+    }
+    
+    .download {
+        font-size: 1em;
+        font-weight: bold;
+    }
+    
+    main .main-content {
+        width: calc(100% - var(--left-nav-md-width));
+    }
+    main .main-content {
+        padding-top: var(--footer-height);
+    }
+    .main-menu li {
+        font-size: 1.3em;
+        margin: 0.8em 1em;
+    }
+
+    .main-title {
+        font-size: 1.8em;
+        padding-left: 0.7em;
+    }
+
+    .main-paragraph {
+        font-size: 0.9em;
+        margin-left: 1.5em;
+    }
+
+    .container-song {
+        margin: 0;
+    }
+
+    .container-song li {
+        width: 23%;
+        margin-left: 0.7em;
+    }
+
+    .subtitle {
+        font-size: 1.2em;
+    }
+
+    .col-left,
+    .col-right {
+        width: 25%;
+    }
+
+    .col-middle {
+        width: 50%;
+    }
+
+    .col-right i {
+        color: white;
+    }
+    
+}
 
 @media screen and (max-width: 700px) {
     .container-menu {
@@ -630,7 +709,7 @@ footer {
     }
 
     main .main-content {
-        padding-top: calc(var(--footer-height));
+        padding-top: var(--footer-height);
     }
 
     .main-menu {
@@ -646,7 +725,7 @@ footer {
     .container-song {
         margin: 0;
     }
-    
+
     .container-song li {
         width: 25%;
         padding: 0 0.5em;
