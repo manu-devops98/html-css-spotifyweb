@@ -838,7 +838,8 @@ footer {
     }
 
     .main-menu li {
-        margin: 0.7em;
+        padding-right: 1.4em;
+        margin: 0.3em 0.7em;
     }
 
     .album {
@@ -852,7 +853,7 @@ footer {
         flex-wrap: wrap;
     }
     .container-song li {
-        width: 50%;
+        width: 45%;
     }
     .main-content header{
     width: calc( 100% - var(--left-nav-xs-width));
@@ -867,8 +868,4 @@ footer {
         padding: 0 1.5em;
         width: 40%;
     }
-
-    
-    
-
   }
