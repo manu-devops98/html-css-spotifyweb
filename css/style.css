@@ -610,6 +610,73 @@ footer {
 
 /* MEDIA QUERY  */
 
+@media screen and (max-width: 700px) {
+    .container-menu {
+        font-size: 1em;
+        padding-bottom: 0.8em;
+    }
+    .container-playlist,
+    .playlist-name {
+        font-size: 0.9em;
+    }
+
+    .download {
+        font-size: 0.7em;
+    }
+
+    .profile {
+        font-size: 0.7em;
+        padding-left: 0.8em;
+    }
+
+    main .main-content {
+        padding-top: calc(var(--footer-height));
+    }
+
+    .main-menu {
+        margin-bottom: 1em;
+    }
+
+    .main-menu li {
+        padding: 0.8em 0.2em;
+        margin-right: 0.7em;
+        font-size: 0.8em;
+    }
+
+    .container-song {
+        margin: 0;
+    }
+    
+    .container-song li {
+        width: 25%;
+        padding: 0 0.5em;
+    }
+
+    .container-song .subtitle {
+        font-size: 0.7em;
+    }
+
+    .main-title {
+        font-size: 1em;
+        padding-left: 0.8em;
+    }
+    
+    .main-paragraph {
+        font-size: 0.6em;
+        padding-left: 1em;
+    }
+
+    .col-middle {
+        width: 40%;
+    }
+
+    .col-left, 
+    .col-right {
+        width: 25%;
+    }
+
+}
+
 @media screen and (max-width: 600px) {
     main .nav-left {
       width: var(--left-nav-xs-width);
