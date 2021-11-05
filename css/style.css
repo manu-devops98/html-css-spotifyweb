@@ -691,9 +691,14 @@ footer {
 }
 
 @media screen and (max-width: 700px) {
+   
     .container-menu {
-        font-size: 1em;
+        font-size: 0.8em;
         padding-bottom: 0.8em;
+    }
+
+    .container-menu span img {
+        width: 80%;
     }
     .container-playlist,
     .playlist-name {
@@ -728,8 +733,8 @@ footer {
     }
 
     .container-song li {
-        width: 45%;
-        padding: 0 0.5em;
+        width: 46%;
+        padding: 0;
     }
 
     .container-song .subtitle {
