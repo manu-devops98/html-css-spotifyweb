@@ -357,7 +357,7 @@ main .main-content {
 
 .play-hover {
     display: none;
-    font-size: 2em;
+    font-size: 3em;
     color: var(--a-hover-color);
     position: absolute;
     top: 50%;
