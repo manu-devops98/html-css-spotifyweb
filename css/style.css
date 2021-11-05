@@ -895,6 +895,14 @@ footer {
     .col-right i {
         display: none;
     }
+
+    .col-left,
+    .col-right {
+        width: 10%;
+    }
+    .col-middle {
+        width: 80%;
+    }
   }
 
 @media screen and (max-width: 330px) {
